@@ -32,9 +32,15 @@ This project implements a comprehensive ML-based pipeline for **supply chain dem
 ### 4. **Model Selection & Comparison**
 Evaluated 7 different approaches across two paradigms:
 
+
 #### **Traditional ML Models (Feature-based)**
 - RandomForest, Gradient Boosting, XGBoost
 - Linear Regression, Ridge Regression
+
+
+
+![image](https://github.com/user-attachments/assets/e16cf1fb-661a-414c-83dc-a96365042455)
+
 
 #### **Time Series Specific Models**
 - Prophet (Facebook's time series forecasting)
@@ -82,20 +88,7 @@ GET /combinations  # View SKU-location combinations
 - **Filtering**: Select specific SKUs or locations
 - **Real-time Results**: Instant JSON response with predictions
 
-## 📋 Evaluation Criteria Addressed
 
-### ✅ **Code Structure and Readability**
-- **Modular Design**: Separate classes for pipeline, API, and UI components
-- **Clean Architecture**: Clear separation between data processing, modeling, and serving
-- **Documentation**: Comprehensive docstrings and type hints throughout
-- **Error Handling**: Robust exception handling with informative messages
-
-```python
-class AdvancedForecastingPipeline:
-    """Clean, well-documented pipeline class with clear methods"""
-    def train_ml_models(self) -> Dict[str, Any]:
-        """Train traditional ML models with proper error handling"""
-```
 
 ### ✅ **Data Preprocessing and Feature Engineering**
 - **Temporal Features**: Day of week, month, day of month extraction
@@ -144,8 +137,16 @@ python model_training_pipeline.py
 python fastapi_forecasting_app.py
 ```
 
-### **Example API Usage**
-```bash
-# Get forecast for mango123 in Mumbai using Prophet
-curl "http://localhost:8070/forecast?start_date=2025-04-08&model_name=Prophet&sku_id=mango123&location=Mumbai"
+
+### streamlit app
+``` bash
+streamlit run streamlit_model_app.py 
 ```
+
+![image](https://github.com/user-attachments/assets/5b70a475-cb25-4bee-9fe7-a1e3afbfd120)
+
+
+![image](https://github.com/user-attachments/assets/0b2fc123-ffba-41e5-b9a9-6819468abf67)
+
+
+![image](https://github.com/user-attachments/assets/061b32cc-e3d1-4cb7-a5bb-4498cd1d9649)
