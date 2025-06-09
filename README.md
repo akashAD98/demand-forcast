@@ -2,7 +2,7 @@
 # Supply Chain Demand Forecasting Pipeline
 
 ## 🎯 Objective
-This project implements a comprehensive ML-based pipeline for **supply chain demand forecasting** that covers the complete data science workflow: data ingestion → preprocessing → model training → prediction → deployment. The goal is to predict future demand for SKUs across different locations to optimize inventory management and supply chain operations.
+This project implements a comprehensive ML-based pipeline for **supply chain demand forecasting** 
 
 ## 📊 Overview of Approach
 
